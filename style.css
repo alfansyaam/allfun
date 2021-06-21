@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=KoHo:wght@300;500&display=swap');
+/*import font dari google font*/
+
+body {
+    /*font ‘sans-serif’ sebagai font yang digunakan pada seluruh elemen yang ada di dalam <body>*/
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h2,
+h3,
+h4 {
+    /*warna pada setiap elemen <h2> dan <h3> yang digunakan pada berkas HTML*/
+    color: #393e46;
+}
+
+p {
+    text-align: justify;
+}
+
+footer {
+    /*warna background dan warna teks pada elemen <footer>*/
+    padding: 20px;
+    color: #393e46;
+    background-color: #aad8d3;
+    text-align: center;
+    font-weight: bold;
+}
+
+nav a {
+    /*mengatur besar huruf, tebal, dan warna*/
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    /*memberikan efek ketika diarahkan ke mouse menjadi tebal*/
+    font-weight: bold;
+}
+
+.profile header {
+    /*membuat text pada elemen header bagian profile menjadi rata tengah*/
+    text-align: center;
+}
+
+.featured-image {
+    /*mengatur posisi letak gambar konten*/
+    width: 100%;
+    max-height: 300px;
+    object-fit:contain;
+    object-position: center;
+}
+
+.profile img {
+    /*mengatur lebar logo*/
+    width: 200px;
+}
+
+.card {
+    /*memberikan efek card pada setiap elemen article*/
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.jumbotron {
+    /*membuat tampilan header pada elemen head*/
+    font-size: 20px;
+    padding: 60px;
+    background-color: #aad8d3;
+    text-align: center;
+    color: white;
+}
+
+nav li {
+    /*mengatur psosisi navigasi konten pada elemen header*/
+    display: inline;
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+nav {
+    /*memberikan warna background pada navigasi*/
+    background-color: #393e46;
+    padding: 5px;
+    position: sticky;
+    /*membuat navigasi melekat pada jendela browser*/
+    top: 0;
+    /*membuat navigasi tetap ketika discroll*/
+}
+
+main {
+    /*mengatur jarak padding pada elemen main, membuat elemen content dan aside
+    dianggap ada oleh elemen main*/
+    padding: 20px;
+    overflow: auto;
+}
+
+#content {
+    /*memberikan layout di kiri untuk konten sebanyak lebar 75%*/
+    float: left;
+    width: 75%;
+}
+
+aside {
+    /*mengatur layout di kanan untuk info lainnya sebanyak lebar 25% dan memberikan jarak
+    dengan konten ke kiri sebanyak 20pixel*/
+    float: right;
+    width: 25%;
+    padding-left: 20px;
+}
+
+* {
+    /*menentukan dimensi kotak dengan tepat tanpa dipengaruhi padding dan border*/
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 1000px) {
+
+    #content,
+    aside {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+header {
+    display: inline;
+}
+
+.info-image {
+    object-fit: cover;
+    object-position: center;
+}
